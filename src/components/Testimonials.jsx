@@ -122,11 +122,6 @@ const Testimonials = () => {
 
               {/* Author */}
               <div className="flex items-center">
-                <img
-                  src={testimonial.image}
-                  alt={testimonial.name}
-                  className="w-12 h-12 rounded-full object-cover mr-4"
-                />
                 <div>
                   <h4 className="font-semibold text-foreground">
                     {testimonial.name}
