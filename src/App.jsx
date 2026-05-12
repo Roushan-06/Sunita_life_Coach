@@ -10,11 +10,14 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
 import Services from "./components/Services";
+import Gallery from "./components/Gallery";
+import Blog from "./components/Blog";
 import Testimonials from "./components/Testimonials";
 import FAQ from "./components/FAQ";
 import Contact from "./components/Contact";
 import BookSession from "./components/BookSession";
 import Footer from "./components/Footer";
+import BlogPost from "./components/BlogPost";
 
 function ScrollToHash() {
   const { pathname, hash } = useLocation();
@@ -53,6 +56,8 @@ function App() {
                   <Hero />
                   <About />
                   <Services />
+                  <Gallery />
+                  <Blog />
                   <Testimonials />
                   <FAQ />
                   <Contact />
@@ -61,6 +66,7 @@ function App() {
             />
 
             <Route path="/book" element={<BookSession />} />
+            <Route path="/blog/:id" element={<BlogPost />} />
           </Routes>
 
           <Footer />

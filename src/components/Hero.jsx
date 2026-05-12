@@ -45,9 +45,17 @@ const Hero = () => {
               <Button 
                 variant="outline" 
                 size="lg"
-                className="rounded-full border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground px-8 py-4 text-lg font-semibold transition-all duration-300"
+                className="rounded-full border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground px-8 py-4 text-lg font-semibold transition-all duration-300 p-0"
               >
-                <Link to="/resources">🎁 Get Free Healing Toolkit</Link>
+                <a 
+                  href="/Awaken Your Shakti_ The Life Transformation Blueprint.pdf" 
+                  download="Awaken_Your_Shakti_The_Life_Transformation_Blueprint.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full h-full flex items-center justify-center px-8 py-4"
+                >
+                  🎁 Get Free Healing Toolkit
+                </a>
               </Button>
             </div>
 
@@ -106,6 +114,30 @@ const Hero = () => {
             <div className="p-4 sm:p-6 bg-card rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300">
               <div className="text-3xl sm:text-4xl mb-2 sm:mb-3">🌟</div>
               <h4 className="font-semibold text-foreground text-sm sm:text-base">Seekers of Change</h4>
+            </div>
+          </div>
+        </div>
+
+        {/* Achievements Banner */}
+        <div className="mt-16 sm:mt-24">
+          <div className="bg-white dark:bg-gray-800 rounded-3xl shadow-xl p-8 lg:p-12">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+              <div>
+                <div className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-violet-600 to-indigo-600 mb-2">8+</div>
+                <div className="text-sm font-medium text-muted-foreground uppercase tracking-wider">Years Experience</div>
+              </div>
+              <div>
+                <div className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-violet-600 to-indigo-600 mb-2">500+</div>
+                <div className="text-sm font-medium text-muted-foreground uppercase tracking-wider">Lives Transformed</div>
+              </div>
+              <div>
+                <div className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-violet-600 to-indigo-600 mb-2">ICF</div>
+                <div className="text-sm font-medium text-muted-foreground uppercase tracking-wider">Certified Coach</div>
+              </div>
+              <div>
+                <div className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-violet-600 to-indigo-600 mb-2">MA</div>
+                <div className="text-sm font-medium text-muted-foreground uppercase tracking-wider">Psychology</div>
+              </div>
             </div>
           </div>
         </div>

@@ -60,10 +60,26 @@ const Navbar = () => {
             </li>
             <li>
               <Link
+                to="/#gallery"
+                className="text-foreground hover:text-primary transition-colors duration-200 capitalize relative hover:after:w-full after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 after:bg-primary after:transition-all after:duration-200"
+              >
+                Gallery
+              </Link>
+            </li>
+            <li>
+              <Link
                 to="/#testimonials"
                 className="text-foreground hover:text-primary transition-colors duration-200 capitalize relative hover:after:w-full after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 after:bg-primary after:transition-all after:duration-200"
               >
                 Testimonials
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/#blog"
+                className="text-foreground hover:text-primary transition-colors duration-200 capitalize relative hover:after:w-full after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 after:bg-primary after:transition-all after:duration-200"
+              >
+                Blog
               </Link>
             </li>
             <li>
@@ -148,10 +164,26 @@ const Navbar = () => {
             </li>
             <li>
               <Link
+                to="/#gallery"
+                className="block text-foreground hover:text-primary py-2 transition-colors duration-200"
+              >
+                Gallery
+              </Link>
+            </li>
+            <li>
+              <Link
                 to="/#testimonials"
                 className="block text-foreground hover:text-primary py-2 transition-colors duration-200"
               >
                 Testimonials
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/#blog"
+                className="block text-foreground hover:text-primary py-2 transition-colors duration-200"
+              >
+                Blog
               </Link>
             </li>
             <li>
