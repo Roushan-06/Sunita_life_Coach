@@ -90,8 +90,8 @@ const Hero = () => {
 
               <div className="absolute -bottom-4 -left-4 bg-white dark:bg-gray-800 rounded-2xl p-4 shadow-xl">
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-primary">15+</div>
-                  <div className="text-sm text-muted-foreground">Years Experience</div>
+                  <div className="text-2xl font-bold text-primary">11,000+</div>
+                  <div className="text-sm text-muted-foreground">Minds Rewired</div>
                 </div>
               </div>
             </div>
@@ -159,8 +159,8 @@ const Hero = () => {
           <div className="relative bg-white/80 dark:bg-gray-900/80 backdrop-blur-xl border border-white/40 dark:border-white/10 rounded-3xl shadow-2xl p-8 lg:p-12 transition-all duration-500 hover:shadow-violet-500/10">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center divide-x-0 md:divide-x divide-gray-200 dark:divide-gray-700">
               <div className="flex flex-col items-center justify-center group p-4">
-                <div className="text-4xl lg:text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-violet-600 to-indigo-600 mb-2 group-hover:scale-110 transition-transform duration-300 drop-shadow-sm">8+</div>
-                <div className="text-xs font-bold text-muted-foreground uppercase tracking-widest mt-1">Years Experience</div>
+                <div className="text-3xl lg:text-4xl font-black text-transparent bg-clip-text bg-gradient-to-r from-violet-600 to-indigo-600 mb-2 group-hover:scale-110 transition-transform duration-300 drop-shadow-sm">11,000+</div>
+                <div className="text-xs font-bold text-muted-foreground uppercase tracking-widest mt-1 text-center">Minds Rewired</div>
               </div>
               <div className="flex flex-col items-center justify-center group p-4 border-l border-gray-200 dark:border-gray-700 md:border-l-0 lg:border-l">
                 <div className="text-4xl lg:text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-violet-600 to-indigo-600 mb-2 group-hover:scale-110 transition-transform duration-300 drop-shadow-sm">500+</div>
@@ -171,8 +171,8 @@ const Hero = () => {
                 <div className="text-xs font-bold text-muted-foreground uppercase tracking-widest mt-1">Certified Coach</div>
               </div>
               <div className="flex flex-col items-center justify-center group p-4 border-t border-l border-gray-200 dark:border-gray-700 md:border-t-0 md:border-l">
-                <div className="text-4xl lg:text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-violet-600 to-indigo-600 mb-2 group-hover:scale-110 transition-transform duration-300 drop-shadow-sm">MA</div>
-                <div className="text-xs font-bold text-muted-foreground uppercase tracking-widest mt-1">Psychology</div>
+                <div className="text-3xl lg:text-4xl font-black text-transparent bg-clip-text bg-gradient-to-r from-violet-600 to-indigo-600 mb-2 group-hover:scale-110 transition-transform duration-300 drop-shadow-sm">MASTERS</div>
+                <div className="text-xs font-bold text-muted-foreground uppercase tracking-widest mt-1">in Psychology</div>
               </div>
             </div>
           </div>
