@@ -89,12 +89,11 @@ const Footer = () => {
         <div className="border-t border-gray-800 mt-8 sm:mt-12 pt-6 sm:pt-8">
           <div className="flex flex-col sm:flex-row justify-between items-center text-center sm:text-left">
             <p className="text-gray-400 text-xs sm:text-sm">
-              © 2024 Sunita Life Coach. All rights reserved.
+              © 2026 Sunita Life Coach. All rights reserved.
             </p>
             <div className="flex items-center space-x-1 text-gray-400 text-xs sm:text-sm mt-3 sm:mt-0">
-              <span>Made with</span>
-              <Heart className="h-3 w-3 sm:h-4 sm:w-4 text-red-500" />
-              <span>for transformation</span>
+              <span>built by</span>
+              <a href="mailto:Advertisewebtech@gmail.com" className="text-violet-400 hover:text-violet-300 transition-colors">WebTech</a>
             </div>
           </div>
         </div>
