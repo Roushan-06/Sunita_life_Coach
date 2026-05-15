@@ -79,6 +79,13 @@ const Footer = () => {
           </div>
         </div>
 
+        <div className="mt-12 sm:mt-16 bg-gradient-to-r from-violet-900/20 to-indigo-900/20 border border-violet-800/30 rounded-2xl p-6 sm:p-8 text-center shadow-lg relative overflow-hidden group hover:border-violet-700/50 transition-colors duration-500">
+          <div className="absolute inset-0 bg-violet-400/5 blur-xl group-hover:bg-violet-400/10 transition-colors duration-500"></div>
+          <p className="relative z-10 text-lg sm:text-xl md:text-2xl font-lora italic text-violet-100/90 leading-relaxed">
+            “This is a safe space for healing, growth, emotional freedom, and self-discovery.”
+          </p>
+        </div>
+
         <div className="border-t border-gray-800 mt-8 sm:mt-12 pt-6 sm:pt-8">
           <div className="flex flex-col sm:flex-row justify-between items-center text-center sm:text-left">
             <p className="text-gray-400 text-xs sm:text-sm">

@@ -7,6 +7,7 @@
     "@radix-ui/react-slot": "^1.0.2",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.0.0",
+    "framer-motion": "^12.38.0",
     "lucide-react": "^0.263.1",
     "nodemon": "^3.1.10",
     "react": "^18.2.0",

@@ -18,6 +18,7 @@ import Contact from "./components/Contact";
 import BookSession from "./components/BookSession";
 import Footer from "./components/Footer";
 import BlogPost from "./components/BlogPost";
+import YoutubeCTA from "./components/YoutubeCTA";
 
 function ScrollToHash() {
   const { pathname, hash } = useLocation();
@@ -57,10 +58,8 @@ function App() {
                   <About />
                   <Services />
                   <Gallery />
-                  <Blog />
                   <Testimonials />
-                  <FAQ />
-                  <Contact />
+                  <Blog />
                 </>
               }
             />
@@ -69,6 +68,9 @@ function App() {
             <Route path="/blog/:id" element={<BlogPost />} />
           </Routes>
 
+          <YoutubeCTA />
+          <FAQ />
+          <Contact />
           <Footer />
         </div>
       </Router>

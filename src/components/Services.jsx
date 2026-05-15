@@ -2,6 +2,7 @@ import React from "react";
 import { Button } from "./ui/button";
 import { Brain, Heart, Target, TrendingUp, Clock, Zap } from "lucide-react";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 const Services = () => {
   const services = [
@@ -77,7 +78,13 @@ const Services = () => {
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         {/* Header */}
-        <div className="text-center mb-12 sm:mb-16 px-4">
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.6 }}
+          className="text-center mb-12 sm:mb-16 px-4"
+        >
           <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold font-lora text-foreground mb-4">
             What I{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-violet-600 to-indigo-600">
@@ -89,12 +96,16 @@ const Services = () => {
             Comprehensive coaching solutions designed to transform your mind,
             heal your emotions, and unlock your full potential
           </p>
-        </div>
+        </motion.div>
 
         {/* Services Grid */}
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 mb-16 sm:mb-20">
           {services.map((service, index) => (
-            <div
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
               key={index}
               className="group p-4 sm:p-6 lg:p-8 bg-card rounded-2xl border border-border shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2"
             >
@@ -107,12 +118,18 @@ const Services = () => {
               <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
                 {service.description}
               </p>
-            </div>
+            </motion.div>
           ))}
         </div>
 
         {/* Programs Section */}
-        <div className="text-center mb-8 sm:mb-12 px-4">
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.6 }}
+          className="text-center mb-8 sm:mb-12 px-4"
+        >
           <h3 className="text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-bold font-lora text-foreground mb-4">
             Programs &{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-violet-600 to-indigo-600">
@@ -122,11 +139,15 @@ const Services = () => {
           <p className="text-base sm:text-lg text-muted-foreground">
             Choose the format that works best for your transformation journey
           </p>
-        </div>
+        </motion.div>
 
         <div className="grid sm:grid-cols-2 gap-4 sm:gap-6 lg:gap-8 mb-8 sm:mb-12">
           {programs.map((program, index) => (
-            <div
+            <motion.div
+              initial={{ opacity: 0, scale: 0.95 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
               key={index}
               className="p-4 sm:p-6 lg:p-8 bg-card rounded-2xl border border-border shadow-lg hover:shadow-xl transition-all duration-300"
             >
@@ -148,12 +169,18 @@ const Services = () => {
                   <Link to="/book">Learn More</Link>
                 </Button>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
 
         {/* Additional Services */}
-        <div className="bg-card rounded-3xl p-4 sm:p-6 lg:p-8 border border-border shadow-lg">
+        <motion.div 
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.8 }}
+          className="bg-card rounded-3xl p-4 sm:p-6 lg:p-8 border border-border shadow-lg"
+        >
           <div className="text-center mb-6 sm:mb-8">
             <h4 className="text-xl sm:text-2xl font-semibold text-foreground mb-4">
               Additional Offerings
@@ -197,7 +224,7 @@ const Services = () => {
               </p>
             </div>
           </div>
-        </div>
+        </motion.div>
 
         {/* CTA */}
         <div className="text-center mt-12 sm:mt-16 px-4">

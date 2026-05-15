@@ -1,6 +1,7 @@
 import React from 'react';
 import { Button } from './ui/button';
 import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
 
 const Hero = () => {
   return (
@@ -8,16 +9,13 @@ const Hero = () => {
       <div className="max-w-7xl mx-auto px-6 lg:px-8 py-20">
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
           {/* Hero Content */}
-          <div className="text-center lg:text-left space-y-8">
+          <motion.div 
+            initial={{ opacity: 0, x: -50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8 }}
+            className="text-center lg:text-left space-y-8"
+          >
             <div className="space-y-4">
-              <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start mb-6">
-                <img
-                  src="/images/logo.svg"
-                  alt="Sunita Life Coach Logo"
-                  className="h-12 w-12 sm:h-16 sm:w-16 mb-2 sm:mb-0 sm:mr-4"
-                />
-                <div className="text-xl sm:text-2xl font-bold text-primary font-lora text-center sm:text-left">Sunita Life Coach</div>
-              </div>
               <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold font-lora leading-tight text-foreground text-center lg:text-left">
                 Rewire Your Mind. Heal Your Energy. <span className="text-transparent bg-clip-text bg-gradient-to-r from-violet-600 to-indigo-600">Create Your Reality.</span>
               </h1>
@@ -40,7 +38,7 @@ const Hero = () => {
                 size="lg"
                 className="rounded-full bg-gradient-to-r from-violet-600 to-indigo-600 hover:from-violet-700 hover:to-indigo-700 text-white border-0 px-8 py-4 text-lg font-semibold shadow-xl hover:shadow-2xl transition-all duration-300"
               >
-                <Link to="/book">🔥 Start Your Transformation</Link>
+                <Link to="/book">Start Your Transformation</Link>
               </Button>
               <Button
                 variant="outline"
@@ -54,7 +52,7 @@ const Hero = () => {
                   rel="noopener noreferrer"
                   className="w-full h-full flex items-center justify-center px-8 py-4"
                 >
-                  🎁 Get Free Healing Toolkit
+                  Get Free Healing Toolkit
                 </a>
               </Button>
             </div>
@@ -65,10 +63,15 @@ const Hero = () => {
               <span className="text-center sm:text-left">✉️ theshaktiawakens@gmail.com</span>
               <span className="text-center sm:text-left">📍 Bangalore, India</span>
             </div>
-          </div>
+          </motion.div>
 
           {/* Hero Image */}
-          <div className="flex justify-center lg:justify-end">
+          <motion.div 
+            initial={{ opacity: 0, x: 50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            className="flex justify-center lg:justify-end"
+          >
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-r from-violet-400 to-indigo-400 rounded-3xl blur-3xl opacity-30 animate-pulse"></div>
               <img
@@ -92,11 +95,17 @@ const Hero = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
 
         {/* Who I Help Section */}
-        <div className="mt-20 sm:mt-28 relative">
+        <motion.div 
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.8 }}
+          className="mt-20 sm:mt-28 relative"
+        >
           <div className="text-center mb-12">
             <span className="text-violet-600 dark:text-violet-400 font-semibold tracking-widest uppercase text-xs mb-3 block">Your Journey Begins Here</span>
             <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold font-lora text-foreground">Who I Help Transform Their Lives</h3>
@@ -136,10 +145,16 @@ const Hero = () => {
               <p className="text-xs sm:text-sm text-muted-foreground mt-2 opacity-0 h-0 group-hover:h-auto group-hover:opacity-100 transition-all duration-300 relative z-10">Unlock your true potential</p>
             </div>
           </div>
-        </div>
+        </motion.div>
 
         {/* Achievements Banner */}
-        <div className="mt-16 sm:mt-24 relative z-10">
+        <motion.div 
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+          className="mt-16 sm:mt-24 relative z-10"
+        >
           <div className="absolute inset-0 bg-gradient-to-r from-violet-600/10 to-indigo-600/10 rounded-3xl blur-2xl"></div>
           <div className="relative bg-white/80 dark:bg-gray-900/80 backdrop-blur-xl border border-white/40 dark:border-white/10 rounded-3xl shadow-2xl p-8 lg:p-12 transition-all duration-500 hover:shadow-violet-500/10">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center divide-x-0 md:divide-x divide-gray-200 dark:divide-gray-700">
@@ -161,7 +176,7 @@ const Hero = () => {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );
